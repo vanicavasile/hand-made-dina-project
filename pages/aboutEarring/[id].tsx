@@ -32,7 +32,7 @@ export default function Post({
   if (!aboutEarring) {
     return (
       <MainLayout>
-        <p>Loading ...</p>
+        <p>Loading...</p>
       </MainLayout>
     );
   }
