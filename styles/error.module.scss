@@ -1,0 +1,28 @@
+.error-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+$color: red;
+
+.error {
+  color: $color;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.go_back {
+  color: black;
+  font-weight: 700;
+}
+
+.error_page {
+  height: calc(100vh - 76px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

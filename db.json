@@ -1,0 +1,10 @@
+{
+    "aboutEarrings": [
+        {"id": 1, "title": "What's earrings?", "body": "An earring is a piece of jewelry attached to the ear via a piercing in the earlobe or another external part of the ear (except in the case of clip earrings, which clip onto the lobe)."},
+        {"id": 2, "title": "Types of earring", "body": "1) helix/cartilage 2) industrial 3) rook 4) daith 5) tragus 6) snug 7) conch 8) anti-tragus 9) lobe"},
+        {"id": 3, "title": "What are earrings done from?", "body": "Earring components may be made of any number of materials, including metal, plastic, glass, precious stone, beads, wood, bone, and other materials."}
+    ],
+    "brooches": {
+        "title": "Brooches Page"
+    }
+}
