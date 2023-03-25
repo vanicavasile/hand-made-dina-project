@@ -1,15 +1,8 @@
-#__next {
-  margin-top: 110px;
-}
-
 main {
-  margin-top: 60px;
   padding: 0.5rem;
 }
 
 nav {
-    position: fixed;
-    height: 100px;
     top: 0;
     right: 0;
     left: 0;
@@ -22,6 +15,16 @@ nav {
     justify-content: space-between;
     align-items: center;
   }
+
+.logo {
+  height: 150px;
+  padding: 8px 0;
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+}
 
 .my-link {
     color: #cf0045;
