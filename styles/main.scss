@@ -19,11 +19,11 @@ nav {
 .logo {
   height: 150px;
   padding: 8px 0;
-}
 
-.logo img {
-  height: 100%;
-  width: auto;
+  img {
+    height: 100%;
+    width: auto;  
+  }
 }
 
 .my-link {
@@ -70,10 +70,12 @@ nav {
 .brooches-list {
     list-style: none;
     margin-top: 5px;
-}
 
-.brooches-list a:hover {
-  font-weight: 600;
+    a {
+      &:hover {
+        font-weight: 600;
+      }
+    }
 }
 
 .nav-brooches:hover {
@@ -92,6 +94,10 @@ nav {
 
 .nav-list-icons {
     list-style: none;
+}
+
+svg {
+ color: #cf0045;
 }
 
 .nav-icons {
