@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
-import Logo from "../assets/logo.jpg";
+import Logo from "../assets/logo.png";
 import Favorite from "../assets/favorite.svg"
 import Cart from "../assets/cart.svg"
 import Image from "next/image"
@@ -19,12 +19,10 @@ export function MainLayout({ children, title = "HandMade | Dina" }) {
 
       <nav>
         <div className="nav-link">
-        <Link href="/" >
+        <Link href="/" className="logo">
             <Image
               priority
               src={Logo} 
-              height={100}
-              width={100}
               alt="Logo"
             />
           </Link>
