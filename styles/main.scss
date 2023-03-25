@@ -1,22 +1,98 @@
+#__next {
+  margin-top: 110px;
+}
+
+main {
+  margin-top: 60px;
+  padding: 0.5rem;
+}
+
 nav {
     position: fixed;
-    height: 60px;
+    height: 100px;
     top: 0;
     right: 0;
     left: 0;
-    background: darkblue;
+    padding: 0 7%;
+    // background: #fdffd7;
+    background: #fff1fa;
+    // background: #fff9da;
+    // background: #fbb9e6;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
-  .my-link {
-    color: white;
+.my-link {
+    color: #cf0045;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    font-weight: 900;
+}
+
+.my-link h2 {
+  margin: 0;
+  color: #4e333b;
+}
+
+.container-brooches-list {
+  position: absolute;
+  border: 1px solid black;
+  visibility: hidden;
+}
+
+.container-brooches {
+  cursor: pointer;
+}
+
+.container-brooches:hover .container-brooches-list {
+  visibility: visible;
+  z-index: 1;
+  background-color: #ffd8fc;
+}
+
+.ul-brooches-list {
+  list-style: none;
+  padding: 0 5px
+}
+  
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.brooches-list {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.brooches-list a:hover {
+  font-weight: 600;
+}
+
+.nav-brooches:hover {
+    color: rgb(116, 0, 0) ;
+}
+
+.container-nav-icons {
+    width: 7%;
   }
 
-  main {
-    margin-top: 60px;
-    padding: 0.5rem;
-  }
+.nav-ul-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.nav-list-icons {
+    list-style: none;
+}
+
+.nav-icons {
+    height: auto;
+    height: 20px;
+    color: rgb(48, 36, 36);
+}
