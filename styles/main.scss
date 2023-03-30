@@ -1,107 +1,167 @@
-main {
-  padding: 0.5rem;
-}
+.nav {
+  padding: 0 10%;
+  // background: #fdffd7;
+  background: #fff1fa;
+  // background: #fff9da;
+  // background: #fbb9e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-nav {
-    top: 0;
-    right: 0;
-    left: 0;
-    padding: 0 7%;
-    // background: #fdffd7;
-    background: #fff1fa;
-    // background: #fff9da;
-    // background: #fbb9e6;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-.logo {
-  height: 150px;
-  padding: 8px 0;
-
-  img {
-    height: 100%;
-    width: auto;  
-  }
-}
-
-.my-link {
-    color: #cf0045;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: larger;
-    font-weight: 900;
-}
-
-.my-link h2 {
-  margin: 0;
-  color: #4e333b;
-}
-
-.container-brooches-list {
-  position: absolute;
-  border: 1px solid black;
-  visibility: hidden;
-}
-
-.container-brooches {
-  cursor: pointer;
-}
-
-.container-brooches:hover .container-brooches-list {
-  visibility: visible;
-  z-index: 1;
-  background-color: #ffd8fc;
-}
-
-.ul-brooches-list {
-  list-style: none;
-  padding: 0 5px
-}
-  
-.nav-link {
+  &-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 75%;
+  }
+
+  &-logo {
+    height: 150px;
+    padding: 8px 0;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &-categories {
+    color: #255c27;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: larger;
+    font-weight: 900;
+
+    h3 {
+      cursor: pointer;
+      margin: 0;
+    }
+  }
+
+  &-brooches {
+    &:hover {
+      color: rgb(116, 0, 0);
+    }
+  }
+}
+
+.container-brooches {
+  &:hover {
+    .container-brooches-list {
+      visibility: visible;
+      z-index: 1;
+      background-color: #ffd8fc;
+    }
+  }
+
+  &-list {
+    position: absolute;
+    border: 1px solid black;
+    visibility: hidden;
+  }
+}
+
+.ul-brooches-list {
+  list-style: none;
+  padding: 0 5px;
 }
 
 .brooches-list {
-    list-style: none;
-    margin-top: 5px;
+  list-style: none;
+  margin-top: 5px;
 
-    a {
-      &:hover {
-        font-weight: 600;
-      }
+  a {
+    &:hover {
+      font-weight: 600;
     }
-}
-
-.nav-brooches:hover {
-    color: rgb(116, 0, 0) ;
+  }
 }
 
 .container-nav-icons {
-    width: 7%;
-  }
+  width: 7%;
+}
 
-.nav-ul-icons {
+.nav {
+  &-ul-icons {
     display: flex;
     justify-content: space-between;
     padding: 0;
-}
+  }
 
-.nav-list-icons {
+  &-list-icons {
     list-style: none;
+  }
 }
 
 svg {
- color: #cf0045;
+  color: #cf0045;
 }
 
-.nav-icons {
-    height: auto;
-    height: 20px;
-    color: rgb(48, 36, 36);
+main {
+  padding: 0.5rem;
+}
+
+.footer {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 220px;
+    width: 100%;
+    padding: 0 10%;
+    border: 1px solid black;
+    background-color: #fff1fa;
+  }
+
+  &-about-company {
+    font-size: 0.7rem;
+    width: 220px;
+    text-align: justify;
+    border-bottom: 2px solid rgb(221, 0, 173);
+    border-top: 2px solid rgb(221, 0, 173);
+    border-radius: 12px;
+    padding: 8px;
+    color: #123213;
+  }
+
+  &-logo {
+    img {
+      height: 150px;
+      width: auto;
+    }
+  }
+
+  &-contact-informations {
+    color: #123213;
+  }
+
+  &-ul-contact-informations {
+    padding: 0;
+  }
+
+  &-li-contact-informations {
+    list-style: none;
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      left: 0;
+      bottom: 2px;
+      background-color: rgb(221, 0, 173);
+      width: 0;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      &::after {
+        transition: 0.3s;
+        width: 100%;
+      }
+    }
+  }
 }
